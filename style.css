@@ -1,0 +1,49 @@
+header {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background: url(images/mountainbg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    
+}
+
+.navbar {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.navbar:hover {
+    text-decoration: underline;
+}
+
+article {
+    float: none;
+    text-align: ;
+    font-size: 25px;
+    margin-top: 200px ;
+    width: 80vw;
+    padding: 30px;
+}
+
+hr {
+    border-top: 1px solid black;
+    margin-top: -10px;
+}
+
+#us {
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 10px;
+    margin: 0px 30px 0px 30px;
+}
+

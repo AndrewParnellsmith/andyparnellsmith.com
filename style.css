@@ -17,7 +17,8 @@
 
     #us {
         max-width: 100%;
-        height: auto
+        height: auto;
+        margin: auto;
     }
 }
 
@@ -31,7 +32,6 @@ header {
     font-family: 'Roboto Slab', serif;
     font-size: 40px;
     font-weight: 700;
-    text-align: center;
     color: white;
     padding: 30px;
     display: flex;
@@ -55,7 +55,7 @@ body {
 
 article {
     float: none;
-    text-align: ;
+    text-align: start;
     font-size: 25px;
     margin-top: 200px ;
     width: 80vw;
@@ -64,7 +64,7 @@ article {
 
 hr {
     border-top: 1px solid black;
-    margin-top: -10px;
+    margin-top: -30px;
 }
 
 #us {
@@ -72,7 +72,7 @@ hr {
     height: 300px;
     float: left;
     border-radius: 10px;
-    margin: 25px 30px 0px 30px;
+    margin: 25px 30px 0px -10px;
 }
 
 h1 {
@@ -91,7 +91,21 @@ h1 {
     width: 350px;
     height: 350px;
     border-radius: 10px;
-    margin: 80px 50px 0px 30px;
+    margin: 80px 30px 0px 30px;
     float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    margin-top: -10px;
 }
 

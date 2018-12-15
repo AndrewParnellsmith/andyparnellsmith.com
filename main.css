@@ -30,6 +30,8 @@ html {
     background-image: linear-gradient(to bottom right,rgb(38, 81, 160), black, rgb(41, 145, 230));;
     color: white;
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .tilt {
 	transform-style: preserve-3d;

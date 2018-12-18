@@ -10,28 +10,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><img class="logo" src="./images/AP.png" alt="">
-        <nav>
+ <header>
+  <nav class="navfull">
+    <div id="margin">
         <ul>
            <li><a class="navbar" href="https://github.com/AndrewParnellsmith" target="_blank">GitHub</a></li>
            <li><a class="navbar" href="./currentprojects.html"> Projects</a></li>
            <li><a class="navbar" href="mailto:andrewparnellsmith@gmail.com?subject=Let&#39s%20talk"target="_top">Contact</a></li>
         </ul>
-        </nav>
-    </header>
-    <hr>
+    </div>
+ </nav>
+        <div id="mySidenav" class="sidenav">
+            <a class="clear" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="clear" href="#">About</a>
+            <a class="clear" href="#">Services</a>
+            <a class="clear" href="#">Clients</a>
+            <a class="clear" href="#">Contact</a>
+          </div>
+          <span class="clear" style="font-size:40px;cursor:pointer" 
+          onclick="openNav()">&#9776;</span>
+          <img class="logo" src="./images/AP2.png" alt="">
+ </header>
   <div class="container">
-      <h1>Andy Parnell-Smith</h1>
 <figure>
     <img id="us" src="./images/us.jpg" alt="My Wife and I">
 </figure>
     <article>
         I am an aspiring front-end dev. I live in Enumclaw, Washingtion. I am constantly working to expand my skills. I am currently well versed in HTML, CSS, and JavaScript. I'm also currently learning React. I am also looking for new ways to use my skills including open source projects.
     </article>
-    <img id="boys" src="./images/boys.jpg" alt="My two Sons">
+    <img id="boys" src="./images/Abel&Dean8bit.jpg" alt="My two Sons">
     <article>
         My family is the reason for my stead fast work toward what I want to achieve. My beautiful wife is my biggest advocate and holds me accountable. My two little guys are out world. Juggling both family and code is a challenge but, we make it work.
     </article>
   </div>
+  <script src="./script.js"></script>
 </body>
+<footer></footer>
 </html>

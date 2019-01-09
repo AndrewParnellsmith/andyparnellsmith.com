@@ -14,10 +14,7 @@
         text-align: left;
     }
 
-    #title  {
-        display: none;
-    }
-
+   
     .logo {
         display: none;
     }
@@ -80,8 +77,9 @@
 
       span {
          position: fixed;
-         right: 0;
-         margin: -110px 50px 50px 50px;
+         right: 30px;
+         top: 40px;
+         float: left;
       }
 
       #margin {
@@ -92,6 +90,10 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+      }
+
+      .flip-card {
+          margin: auto;
       }
 
       @media screen and (max-height: 450px) {
@@ -116,7 +118,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    text-shadow: 2px 2px black;
 }
 
 body {
@@ -161,11 +163,6 @@ h1 {
     max-height: 150px;
 }
 
-#boys {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
 a {
     text-decoration: none;
     display: flex;
@@ -187,36 +184,24 @@ ul {
 .clear  {
     display: none;
     } 
-}
 
-.card {
-    box-shadow: 0 4px 8px 0 white;
-    transition: 0.3s;
-    width: 50vw;
-    border-radius: 10px;
 }
 
 .pad {
     padding: 40px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #title {
-    padding: 20px;
+    padding: 3%;
     letter-spacing: .3cm;
-    font-size: 70px;
+    font-size: 5vw;
 }
 
 footer  {
   background: black;
-  border-radius: 10px;
   padding: 10px;
   text-align: center;
+  bottom: 0px;
 }
 
 nav {
@@ -228,7 +213,7 @@ nav {
 #margin {
     position: fixed;
     margin-top: -50px;
-    background-color: rgb(10, 11, 12);
+    background-color: rgba(10, 11, 12,0.6);
     padding: 5px 70px 5px 70px;
     border-radius: 5px;
 }
@@ -239,6 +224,7 @@ nav {
    margin: auto;
    justify-content: center;
    width: 750px;
+   padding-top: 3%;
 }
 
 #smallname {
@@ -246,15 +232,99 @@ nav {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 450px) {
-    span {
-        margin: -100px 20px 50px 50px; 
-    }
-}
+
 
 #all {
     background-image: url('./images/mountainbg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 50vw;
 }
 
+.name {
+    font-size: 5%;
+}
+
+@media screen and (min-width: 1500px) {
+   
+    #title {
+        margin-top: 9%;
+    }
+    .logoname {
+        margin-top: 4%;
+    }
+    }
+
+    @media screen and (max-width: 500px) {
+        span {
+            float: left;
+        }
+    
+        #title {
+            font-size: 60%;
+        }
+    
+        #all {
+            height: 70vw;
+        }
+
+        .flip-card  {
+            margin-left: -55px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 5vw;
+        padding: 20px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        padding: 40px 20px 20px 60px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        z-index: 2;
+      }
+      
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        z-index: 1;
+      }
+
+      .projects {
+          background-image: url("./images/apple-black-and-white-black-and-white-169573.jpg");
+          background-size: 100% 100%;
+          height: fit-content;
+          background-repeat: no-repeat;
+          padding-bottom: 200px;
+      }

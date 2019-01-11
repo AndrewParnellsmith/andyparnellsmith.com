@@ -148,9 +148,9 @@ article {
 }
 
 #us {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-   
+    width: 25vw;
+    border-radius: 10px 10px 10px 10px;
+    
 }
 
 h1 {
@@ -320,7 +320,7 @@ nav {
       }
       
       .flip-card-back {
-        background-color: #2980b9;
+        background-image: linear-gradient(to bottom right,rgb(38, 81, 160), black, rgb(41, 145, 230));
         color: white;
         transform: rotateY(180deg);
         z-index: 1;
@@ -339,4 +339,8 @@ nav {
          justify-content: space-evenly;
          flex-wrap: wrap;
          
+     }
+
+     .about {
+         display: flex;
      }

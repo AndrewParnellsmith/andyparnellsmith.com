@@ -39,16 +39,18 @@
           <div class="move">
             <h1 style="font-size:11vw; font-family: 'Tangerine'; text-align: left" id="smallname" class="clear" style= >Andy <br> Parnell-Smith</h1>
             <h1 id="title">Freelance Front-End <br> Developer</h1>
-            <span class="clear" style="font-size:6vw;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="clear" id="hamburger" onclick="openNav()">&#9776;</span>
           </div>
         </div>
 </header>
 <div class="about">
   <h2>About</h2>
-    <p>
+  <div class="flex2">
       <img id="us" src="./images/us.jpg" alt="">
+    <p>
         I am a free-lance front-end dev. I live in Enumclaw, Washingtion. I am constantly working to expand my skills. I am currently well versed in HTML, CSS, and JavaScript. I'm also currently learning React. I am also looking for new ways to use my skills including open source projects.My family is the reason for my stead fast work toward what I want to achieve. My beautiful wife is my biggest advocate and holds me accountable. My two little guys are our world. Juggling both family and code is a challenge but, we make it work.
     </p>
+  </div>
   </div>
 <div class="projects">
     <h2>Projects</h2>
@@ -56,18 +58,20 @@
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="./images/rockdodger.png" alt="Avatar" style="width:300px;height:300px;">
+           <a href="./projects/rockdodger/index.html"> <img class="flip-card-image" src="./images/rockdodger.png" alt="Avatar" style="width:300px;height:300px;"></a>
           </div>
+          <a href="./projects/rockdodger/index.html">
           <div class="flip-card-back">
-            <h3>Rock Dodger Game</h3> 
-            <p>JavaScript</p>
+              <h3>Rock Dodger Game</h3> 
+              <p>JavaScript</p>
         </div>
+      </a>
     </div>
   </div>
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="./images/robo-friends.png" alt="Avatar" style="width:300px;height:300px;">
+        <img class="flip-card-image" src="./images/robo-friends.png" alt="Avatar" style="width:300px;height:300px;">
       </div>
       <div class="flip-card-back">
         <h3>Robofriends React App</h3> 
@@ -78,7 +82,7 @@
   <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="./images/face-recognition.png" alt="Avatar" style="width:300px;height:300px;">
+            <img class="flip-card-image" src="./images/face-recognition.png" alt="Avatar" style="width:300px;height:300px;">
           </div>
           <div class="flip-card-back">
             <h3>face-recognition</h3> 
@@ -89,12 +93,14 @@
       <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./images/huddle.png" alt="Avatar" style="width:300px;height:300px;">
+                <img class="flip-card-image" src="./images/huddle.png" alt="Avatar" style="width:300px;height:300px;"></a>
               </div>
+              <a href="./projects/huddle/index.html">
               <div class="flip-card-back">
                 <h3>Huddle Web Page</h3> 
                 <p>HTML, CSS</p>
             </div>
+          </a>
            </div>
           </div>
  </div>

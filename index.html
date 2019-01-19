@@ -16,13 +16,12 @@
   <nav class="navfull">
     <div id="margin">
         <ul>
-           <li><a class="navbar" href="./index.html">About</a></li>
-           <li><a class="navbar" href="./projects.html"> Projects</a></li>
+           <li><a class="navbar" href="#about">About</a></li>
+           <li><a class="navbar" href="#projects">Projects</a></li>
            <li><a class="navbar" href="https://github.com/AndrewParnellsmith" target="_blank">GitHub</a></li>
            <li><a class="navbar" href="mailto:andrewparnellsmith@gmail.com?subject=Let&#39s%20talk"target="_top">Contact</a></li>
         </ul>
     </div>
-    <button>Contact</button>
  </nav>
  <div class="top"> 
     <div class="logoname">  
@@ -32,19 +31,19 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="clear" class="closebtn"  onclick="closeNav()">&times;</a>
-            <a class="clear" href="./index.html">Home</a>
+            <a class="clear" href="#about">About</a>
             <a class="clear" href="https://github.com/AndrewParnellsmith">GitHub</a>
             <a class="clear" href="./projects.html">Projects</a>
             <a class="clear" href="mailto:andrewparnellsmith@gmail.com?subject=Let&#39s%20talk"target="_top">Contact</a>
           </div>
           <div class="move">
-            <h1 style="font-size:11vw; font-family: 'Tangerine'; text-align: left" id="smallname" class="clear" style= >Andy <br> Parnell-Smith</h1>
+            <h1 style="font-size:8vw; font-family: 'Tangerine'; text-align: left" id="smallname" class="clear" style= >Andy Parnell-Smith</h1>
             <h1 id="title">Freelance Front-End <br> Developer</h1>
             <span class="clear" id="hamburger" onclick="openNav()">&#9776;</span>
           </div>
         </div>
 </header>
-<div class="about">
+<div id="about">
   <h2>About</h2>
   <div class="flex2">
       <img id="us" src="./images/us.jpg" alt="">
@@ -53,7 +52,7 @@
     </p>
   </div>
   </div>
-<div class="projects">
+<div id="projects">
     <h2>Projects</h2>
   <div class="flex">
     <div class="flip-card">
@@ -108,7 +107,12 @@
 </div>
   <div class="pad"></div>
   <footer>
-        <p>If your looking for someone to build your page I can help. I am new and still building my portfolio. Price is negotiable</p>
+      <a href="mailto:andrewparnellsmith@gmail.com?subject=Let&#39s%20talk"target="_top"><img id="mail" class="footer-image" src="./images/icon-email.svg" alt="contact"></a>
+        <ul>
+          <li><a href="#about">About &nbsp; &nbsp; &bull; </li></a>
+          <li> <a href="#projects">Projects</li></a>
+        </ul>
+        <img class="footer-image" src="./images/GitHub-Mark-Light-64px.png" alt="github">
   </footer>
   <script src="./script.js"></script>
 </body>

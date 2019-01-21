@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Huddle landing page with alternating sections</title>
+
+</head>
+<body>
+  <header> 
+      <span id="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>            
+    <div class="container">
+       <img id="logo" src="./images/logo.svg" alt="Messages">
+    </div>
+  <div class="container2">
+    <button id="free">Try it free</button>
+  </div>
+</header>
+  <h1 class="headings">Build The Community Your Fans Will Love</h1>
+<p id="p1">
+  Huddle re-imagines the way we build communities. You have a voice, but so does 
+  your audience. Create connections with your users as you engage in genuine discussion. 
+</p>
+<div class="container3">
+  <button class="start">Get Started For Free</button> 
+</div>
+<img id="mockups" src="./images/screen-mockups.svg" alt="screen-mockups">
+    <div id="fix">
+      <div id="people2">
+        <div>
+        <img id="people" src="./images/icon-communities.svg" alt="">
+        </div>
+          <div> <span class="amount">1.4k+</span> <br> Communities Formed</div>
+        </div>
+        <div class="spacing"></div>
+      <div class="message2">
+        <div>
+    <img id='message'src="./images/icon-messages.svg" alt="messages">
+    </div> 
+<div> <span class="amount">2.7m+</span><br>
+  Messages Sent
+    </div>
+  </div> 
+</div>
+<img class='bg1'src="./images/bg-section-top-desktop-1.svg" alt="">
+  <div class="blue">
+      <article>
+    <h1 class="headings">Grow Together</h1>
+    <p>
+    Generate meaningful discussions with your audience and build a strong, loyal community. 
+    Think of the insightful conversations you miss out on with a feedback form. 
+    </p>
+  </article>
+    <img id="grow" src="./images/illustration-grow-together.svg"  alt="">
+  </div>
+  <img class='bg2' src="./images/bg-section-bottom-desktop-1.svg" alt="">
+<div id="flowingconvo">
+  <img id="flow" src="./images/illustration-flowing-conversation.svg" alt="">
+  <article>
+  <h1 class="headings">Flowing Conversations</h1>
+  <p>
+  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+  just-in-time loading for a more natural flow.
+  </p>
+</article>
+</div>
+<img class="bg1" src="./images/bg-section-top-desktop-2.svg" alt="">
+<div class="blue">
+  <article>
+  <h1 class="headings">Your Users</h1>
+  <p>
+  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+  once signed in to your app, your users can start chatting immediately.
+</p>
+</article>
+<img id="users" src="./images/illustration-your-users.svg" alt="">
+</div>
+<img class="bg2" src="./images/bg-section-bottom-desktop-2.svg" alt="">
+<div class="padding">
+  <h1>Ready To Build Your Community?</h1>
+ <button class="start">Get Started For Free</button>
+</div>
+<img class="bg1" src="./images/bg-footer-top-desktop.svg" alt="">
+<div id="footer">
+<div class="left">
+  <img class="white" src="./images/logo.svg" alt=""> <br>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+  vestibulum a, ultrices quis sem.
+</p>
+<img src="./images/icon-phone.svg" alt=""> <span>Phone: +1-543-123-4567</span><br>
+ <br> 
+ <img src="./images/icon-email.svg" alt=""> <span>example@huddle.com</span>
+ <div id="icons"> 
+    <img class="size white" src="./images/facebook.svg" alt="">
+    <img class="size white" src="./images/instagram.svg" alt="">
+    <img class="size white" src="./images/twitter.svg" alt="">
+ </div>
+</div>
+<div class="right">
+  <h1>Newsletter</h1>
+  <p>
+  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+  send you spam or pass on your email address
+</p>
+<div class="inline">
+<input id="box" type="text" placeholder="Enter E-mail"> <div class="pad"></div> <button id="subscribe">Subscribe</button>
+</div>
+</div>
+</div>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>

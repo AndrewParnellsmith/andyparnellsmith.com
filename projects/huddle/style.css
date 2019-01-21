@@ -1,0 +1,299 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#free {
+    width: 160px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
+
+#logo {
+    padding: 3px;
+    max-width: 200px;
+    max-height: 50px;
+    margin-top: 58px
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2em;
+}
+
+.container2 {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    padding: 2em;
+    margin-top: -110px
+}
+
+#free:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: white
+}
+
+.headings {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#p1 {
+    margin:0 auto;
+    width: 410px
+}
+
+.start {
+    width: 400px;
+    height:75px;
+    border-radius: 35px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    padding: 0px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   text-align: center;
+   font-weight: 700;
+   font-size: 20px;
+   transition: all .2s ease-in-out;
+}
+
+.container3 {
+    padding: 40px;
+    padding-bottom: 150px
+    
+}
+
+.start:hover {
+    transform: scale(1.1);
+}
+
+#mockups {
+    display: block;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto
+    
+}
+
+header {
+    padding-bottom: 250px
+}
+
+.amount {
+    font-weight: 900;
+    font-size: 5em
+}
+
+#fix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8em;
+    padding-bottom: 5em
+}
+
+#message {
+    margin-top: -2em;
+    margin-right: 12em;
+    max-width: 35px;
+}
+
+#people {
+    margin-top: -3.6em;
+    margin-right: 10em;
+    max-width: 35px;
+}
+
+.spacing {
+    padding: 4em
+}
+
+.blue {
+    background-color: hsl(207, 100%, 98.1%);
+    text-align: left;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.bg1 {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.bg2 {
+   width: 100%
+}
+
+#grow {
+    max-width: 500px;
+    max-height: 400px;
+    padding: 100px;
+}
+
+article {
+    max-width: 500px;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+#flow {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+#flowingconvo {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+#users {
+    max-width: 500px;
+    max-height: 400px;
+    padding: 50px;
+}
+
+.padding {
+    padding: 200px;
+}
+
+#footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.white  {
+    filter: brightness(0) invert(1)
+}
+
+.left {
+    text-align: left;
+    max-width: 350px;
+    padding: 100px;
+    
+}
+
+#icons {
+    display: flex;
+    margin-left: -10px
+}
+
+.size   {
+    max-width: 33px;
+    padding: 10px
+}
+
+.right {
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 75px;
+
+}
+
+#box {
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+}
+
+#subscribe {
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: hsl(322, 100%, 66%);
+    border-style: none;
+    color: white;
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.pad {
+    padding: 10px;
+}
+
+#subscribe:hover {
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%)
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #hamburger {
+    position: fixed;
+    right: 30px;
+    top: 40px;
+    float: left;
+    z-index: 999;
+ }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

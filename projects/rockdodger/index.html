@@ -7,6 +7,16 @@
   </head>
 
   <body>
+    <header>
+        <span id="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../index.html#about">About</a>
+            <a href="../../index.html#projects">Projects</a>
+            <a href="https://github.com/AndrewParnellsmith" target="_blank">GitHub</a>
+            <a href="mailto:andrewparnellsmith@gmail.com?subject=Let&#39s%20talk" target="_top">Contact</a>
+          </div>    
+    </header>
     <div id="game">
       <a id="start" href="javascript:start()">START</a>
       <div id="dodger" style="bottom: 0px; left: 180px;"></div>
@@ -19,5 +29,14 @@
     <script src="node_modules/expect/umd/expect.min.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
+    <script>
+        function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
   </body>
 </html>

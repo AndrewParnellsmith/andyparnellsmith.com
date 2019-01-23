@@ -14,11 +14,6 @@
         text-align: left;
     }
 
-   
-    .logo {
-        display: none;
-    }
-
     .top {
         display: none;
     }
@@ -45,7 +40,7 @@
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 9999;
         top: 0;
         right: 0;
         background-color: #111;
@@ -117,7 +112,7 @@ html {
 
 header {
     font-family: 'Roboto Slab', serif;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     color: white;
     display: flex;
@@ -142,8 +137,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 #us {
     width: 400px;
     height: 400px;
@@ -152,15 +145,16 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-size: 90px;
+    display: flex;
+    font-size: 40px;
     font-weight: 700;
-    margin: auto;
+    padding-left: 100px;
+    align-items: center;
 }
 
 .logo {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 a {
@@ -207,30 +201,19 @@ footer  {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
     padding: 50px;
     z-index: 9;
 }
 
 #margin {
     position: fixed;
+    width: 100%;
     margin-top: -50px;
-    padding: 30px 0px 5px 0px;
-    border-radius: 5px;
     z-index: 9999;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.logoname {
-   display: inline-block; 
-   display: flex;
-   margin: auto;
-   justify-content: center;
-   width: 750px;
-   padding-top: 3%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #smallname {
@@ -238,17 +221,11 @@ nav {
     margin-left: 10px;
 }
 
-
-
 #all {
     background-image: url('./images/mountainbg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 50vw;
-}
-
-.name {
-    font-size: 5%;
 }
 
 @media screen and (min-width: 1500px) {
@@ -396,4 +373,9 @@ nav {
 
      #mail  {
          height: 30px;
+     }
+
+     #name {
+        display: flex;
+        
      }

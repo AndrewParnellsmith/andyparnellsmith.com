@@ -117,7 +117,6 @@ header {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     text-shadow: 2px 2px black;
 }
 
@@ -192,10 +191,10 @@ ul {
 }
 
 footer  {
-  background: black;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   bottom: 0px;
   color: white
 }
@@ -203,6 +202,12 @@ footer  {
 nav {
     padding: 50px;
     z-index: 9;
+}
+
+.navfull {
+   
+    right: 0;
+    width: 100%;
 }
 
 #margin {
@@ -214,6 +219,15 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.logoname {
+   display: inline-block; 
+   display: flex;
+   margin: auto;
+   justify-content: center;
+   width: 750px;
+   padding-top: 3%;
 }
 
 #smallname {
@@ -358,17 +372,11 @@ nav {
         height: 300px;
      }
      
-     .navfull {
-         display: flex; 
-         flex-direction: row;
-         justify-content: flex-end;
-     }
-
      .footer-image {
          padding: 50px;
-         margin-top: -60px;
-         width: 40px;
-         height: 40px;
+         margin-top: -50px;
+         width: 30px;
+         height: 30px;
      }
 
      #mail  {
@@ -379,3 +387,4 @@ nav {
         display: flex;
         
      }
+

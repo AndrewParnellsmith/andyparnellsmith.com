@@ -68,7 +68,7 @@
       span {
          position: fixed;
          right: 30px;
-         top: 10px;
+         top: 18px;
          float: left;
          z-index: 9999;
       }
@@ -100,7 +100,7 @@
 
 
 html {
-    background-color: black;
+    background-color: #383838;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -125,6 +125,7 @@ body {
     padding: 5px;
     padding-right: 10px;
     text-decoration: none;
+    margin-top: 17px;
     z-index: 9999;
 }
 
@@ -187,12 +188,13 @@ ul {
 }
 
 footer  {
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  bottom: 0px;
-  color: white
+  color: white;
+  align-items: center;
+  border-top-style: solid;
+  border-top-color: gray;
 }
 
 nav {
@@ -232,7 +234,7 @@ nav {
     background-image: url('./images/mountainbg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 35vw;
+    height: 600px;
 }
 
 @media screen and (min-width: 1500px) {
@@ -308,7 +310,7 @@ nav {
 
       #projects {
           background-image: url("./images/apple-black-and-white-black-and-white-169573.jpg");
-          background-size: 100% 100%;
+          background-size: 100% 90%;
           height: fit-content;
           background-repeat: no-repeat;
           padding-bottom: 200px;
@@ -357,9 +359,10 @@ nav {
      
      .footer-image {
          padding: 50px;
-         margin-top: -50px;
-         width: 30px;
-         height: 30px;
+         margin-top: 0px;
+         width: 40px;
+         height: 40px;
+         
      }
 
      #mail  {
@@ -372,11 +375,22 @@ nav {
      }
 
      button {
+        font-size: 20px;
+        font-style: oblique;
         margin: 40px 20px 20px 40px;
-        border-radius: 20px;
+        border-radius: 30px;
         width: 400px;
         height: 50px;
+        background-color: #383838;
+        border-style: none;
+        color: white;
+        transition: all .2s ease-in-out;
+        box-shadow: 0px 4px 0px 4px rgba(39, 37, 37, 0.2);
      }
+
+     button:hover {
+        transform: scale(1.1);
+    }
 
      
 
